@@ -3,12 +3,9 @@ let error = document.getElementById("errorMsg")
 let button = document.getElementById("findButton")
 let result = document.getElementById("resultDiv")
 
-
-
 button.addEventListener("click", function () {
     result.innerHTML = ""
     error.innerHTML = ""
-    // let arrElement=
     let inputvalue = textvalue.value.trim()
 
     if (inputvalue === "") {
@@ -25,5 +22,4 @@ button.addEventListener("click", function () {
     })
     result.innerText = `the largest word is : ${largeword}
            the smallest word is :${smallword} `
-
 })
