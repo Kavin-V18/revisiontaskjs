@@ -4,12 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+      <style>
+               body{
+                   background-color: pink;
+                   color: black;
+               }
+                section{
+                      display: flex;
+                      flex-direction: column;
+                      justify-content: center;
+                      align-items: center;
+                
+                }
+                section div{
+                    margin: 5px;
+                     padding: 10px;
+                }
+          </style>
 </head>
 <body>
-
+    <section id="content">
+            <h2>Data and Time</h2>
           <label for="">click to show date and time</label>
-          <button onclick="myFunction()">show date and time</button>
+          <button onclick="myFunction()">Show Date and Time</button>
           <div id="resultDiv"></div>
+          </section>
 
        <script src="./task.js"></script>
 </body>

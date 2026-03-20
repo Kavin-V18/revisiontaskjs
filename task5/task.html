@@ -4,9 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+               body{
+                   background-color:paleturquoise;
+                   color: black;
+               }
+                section{
+                      margin-top: 50px;
+                      display: flex;
+                      flex-direction: column;
+                      justify-content: center;
+                      align-items: center;
+                
+                }
+                section div{
+                    margin: 5px;
+                     padding: 10px;
+                }
+          </style>
 </head>
 <body>
-
+         <section id="content">
+            <h2>largest Number Finder</h2>
        <div>
         <label for="">enter numbers with commas</label>
        </div>
@@ -14,7 +34,7 @@
        <div id="errorMsg"></div>
         <button id="find">find largest</button>
         <div id="resultDiv"></div>
-
+         </section>
      <script src="./task.js"></script>
 </body>
 </html>

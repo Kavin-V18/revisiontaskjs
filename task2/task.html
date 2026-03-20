@@ -4,8 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+       <style>
+            body{
+                 background-color: aquamarine;
+                 color: black;
+            }
+            section{
+                margin-top: 50px;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+            }
+            section div{
+                 padding: 10px;
+                 margin: 10px;
+            }
+            
+       </style>
 </head>
-<body>
+<body>    <section id="content">
+               <h2>Check for Vowel</h2>
            <div>
             <label for="">input a single letter</label>
            </div>
@@ -14,7 +34,7 @@
            <button id="checkButton">check</button>
            <div id="resultDiv"></div>
 
-      
+      </section>
        <script src="./task.js"></script>
 </body>
 </html>

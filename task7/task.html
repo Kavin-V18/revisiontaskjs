@@ -4,17 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+       <style>
+               body{
+                   background-color: pink;
+                   color: black;
+               }
+                section{
+                      display: flex;
+                      flex-direction: column;
+                      justify-content: center;
+                      align-items: center;
+                
+                }
+                section div{
+                    margin: 5px;
+                     padding: 10px;
+                }
+                button{
+                     margin: 5px;
+                }
+          </style>
 </head>
 <body>
-
-        <div><label for="">enter numbers separated with commas</label></div>
+         <section id="content">
+            <h2> Sum & Multiply Numbers </h2>
+        <div><label for="">Enter Numbers Separated With Commas</label></div>
         <input type="text" id="inputfield"> <br><br>
 
         <label for="">output</label><textarea name="" id="outputarea"></textarea>
         <div id="errormsg"></div>
          <br>
+         
         <button id="addbutton">add</button>
         <button id="multiplybutton">multiply</button>
+
+        </section>
        <script src="./task.js"></script>
 </body>
 </html>

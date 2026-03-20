@@ -4,10 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+          <style>
+               body{
+                   background-color: pink;
+                   color: black;
+               }
+                section{
+                      display: flex;
+                      flex-direction: column;
+                      justify-content: center;
+                      align-items: center;
+                
+                }
+                section div{
+                    margin: 5px;
+                     padding: 10px;
+                }
+          </style>
 </head>
-<body>             
+<body>  
+             <section id="content">           
               <div>
-                  <label for="">enter a sentence</label>
+                  <label for="">Enter a Sentence</label>
               </div>
                <textarea name="" id="inputField"></textarea>
 
@@ -16,6 +35,8 @@
                <button id="findButton">submit</button>
 
                <div id="resultDiv"></div>
+
+               </section>
           <script src="./task.js"></script>
 </body>
 </html>

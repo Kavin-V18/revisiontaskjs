@@ -4,18 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
+        <style>
+            body{
+                 background-color:beige;
+                 color: black;
+            }
+            section{
+                margin-top: 50px;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+            }
+            section div{
+                 padding: 10px;
+                 margin: 10px;
+            }
+            
+       </style>
 </head>
 <body>
-
+          <section id="content">
+              <h2>check for last character match</h2>
         <div>
-            <label for="">enter a word</label>
+            <label for="">Enter a Word</label>
         </div>
         <input type="text" id="inputField">
 
              <div id="errorMsg"></div>
              <button id="checkButton">check</button>
               <div id="resultDiv"></div>
-
+     </section>
 
        <script src="./task.js"></script>
 </body>

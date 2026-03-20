@@ -4,9 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+               body{
+                   background-color:paleturquoise;
+                   color: black;
+               }
+                section{
+                      margin-top: 50px;
+                      display: flex;
+                      flex-direction: column;
+                      justify-content: center;
+                      align-items: center;
+                
+                }
+                form div{
+                    margin: 5px;
+                     padding: 10px;
+                }
+          </style>
 </head>
-<body>
+<body> <section id="content">
         <form >
+              <h2>Login Form</h2>
                   <div><label for="firstname">Firstname</label></div>
                   <input type="text" name="firstname" required>
 
@@ -30,5 +50,6 @@
                    <div id="errorDiv"></div>
 
         </form>
+        </section>
 </body>
 </html>

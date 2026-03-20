@@ -4,22 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+      <style>
+         body{
+             background-color: cadetblue;
+             columns: white;
+         }
+            section{
+                  
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 50px;
+                  
+            }
+            #content div{
+                padding: 5px;
+                margin: 5px;
+            }
+      </style>
 </head>
-<body>   <div>
-        <label for="">enter the values separated with commas</label>
+<body>
+       <section>
+          
+         <div id="content">
+                <h2>replace elements In An Array</h2>
+        <div>
+        <label for="">Enter the Values separated with Commas</label>
      </div>
      <input type="text" id="inputField">
 
-        <div><label for="">enter the position</label></div>
+        <div><label for="">Enter The Position</label></div>
         <input type="text" id="positionvalue">
 
-        <div><label for="">enter the new element</label></div>
+        <div><label for="">Enter The New Element</label></div>
         <input type="text" id="newelement">
 
         <div id="errordiv"></div>
-        <button id="replacebutton">replace</button>
+        <button id="replacebutton">Replace</button>
 
         <div id="resultdiv"></div>
+        </div>
+        </section>
      <script src="./task.js"></script>
 </body>
 </html>

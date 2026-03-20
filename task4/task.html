@@ -4,17 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+      <style>
+               body{
+                   background-color:rgb(135, 241, 206);
+                   color: black;
+               }
+                section{
+                      margin-top: 50px;
+                      display: flex;
+                      flex-direction: column;
+                      justify-content: center;
+                      align-items: center;
+                
+                }
+                section div{
+                    margin: 5px;
+                     padding: 10px;
+                }
+          </style>
 </head>
-<body>
+<body>       <section id="content">
+                
+                    <h2>Reverse a String</h2>
                <div>
-                <label for="">enter a string</label>
+                <label for="">Enter a String</label>
                </div>
                <textarea name="" id="inputfield"></textarea>
                <div id="errormsg"></div>
                <button id="reverse">reverse</button>
                <div id="resultdiv"></div>
 
-
+               </section>
 
       
       <script src="./task.js"></script>

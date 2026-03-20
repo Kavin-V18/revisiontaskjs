@@ -4,18 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+        <style>
+             body{
+                background-color: bisque;
+                color: black;
+             }
+             section{
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+                 margin-top: 50px;
+             }
+             #buttons{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 10px;
+                    margin-left: 10px;
+             }
+        </style>
+         
 </head>
 <body>
-      
+       <div><h2>Checkbox Controls</h2></div>
+       <section id="content">
        <input type="checkbox" class="check">option 1
        <input type="checkbox" class="check">option 2
        <input type="checkbox" class="check">option 3
        <input type="checkbox" class="check">option 4
        <input type="checkbox" class="check">option 5
-
+        <div id="buttons">
        <button id="checkall">check all</button>
        <button id="uncheckall">uncheck all</button>
        <button id="toggle">toggle</button>
+       </div>
+       </section>
     <script src="./task.js"></script>
 </body>
 </html>
