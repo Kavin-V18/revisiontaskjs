@@ -4,10 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+          body{
+             background-color: paleturquoise;
+             color: black;
+             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          }
+          section{
+            margin-top: 200px;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+          }
+          article div{
+            margin: 5px;
+            padding: 5px;
+          }
+    </style>
 </head>
 <body>
-
-       <div><label for="">enter values separed by commas</label></div>
+        <section id="contents">
+            <article>
+                  <h2 style="color: black;"> Remove Duplicate Elements from Array</h2>
+       <div><label for="">Enter values Separated By Commas</label></div>
 
        <textarea name="" id="inputfield"></textarea>
 
@@ -15,6 +34,8 @@
        <button id="removebtn">remove duplicates</button>
 
        <div id="resultdiv"></div>
+       </article>
+       </section>
         <script src="./task.js"></script>
 </body>
 </html>

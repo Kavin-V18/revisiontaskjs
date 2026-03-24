@@ -4,12 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+        <style>
+         body{
+             background-color: black;
+             color: white;
+         }
+         section{
+            margin-top: 100px;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+         }
+         article div{
+             margin: 5px;
+         }
+    </style>
 </head>
 <body> 
-
+   <section>
+    <article>
     <div><label for="">search user</label></div>
        <input type="text" id="inputField" oninput="myFunction()">
        <div id="result"></div>
+       </article>
+       </section>
       <script src="./task.js"></script>
 </body>
 </html>

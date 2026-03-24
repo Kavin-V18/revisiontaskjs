@@ -4,11 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+         body{
+             background-color: teal;
+             color: black;
+         }
+         section{
+            margin-top: 100px;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+         }
+         article div{
+             margin: 5px;
+         }
+    </style>
 </head>
-<body>
+<body>  
+           <section>
+    <article>
+        <h2>Debounce Search Input</h2>
           <div><label for="">search for products</label></div>
           <input type="text" id="inputField" oninput="searchFunction()">
           <div id="result"></div>
+          </article>
+          </section>
               
       <script src="./task.js"></script>
 </body>

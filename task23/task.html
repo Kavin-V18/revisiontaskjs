@@ -4,9 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+      <style>
+          body{
+             background-color: palegoldenrod;
+             color:black;
+             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          }
+          section{
+            margin-top: 200px;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+          }
+          article div{
+            margin: 5px;
+            padding: 5px;
+          }
+    </style>
 </head>
 <body>
-        <div><label for="">Enteer your email</label></div>
+    <section>
+        <article>
+             <h2>Email Domain Extractor </h2>
+        <div><label for="">Enter Your Email</label></div>
         <input type="text" id="inputField">
 
         <div id="errorDiv"></div>
@@ -14,6 +35,8 @@
         <button id="emailCheck">Domain Extractor</button>
 
         <div id="resultDiv"></div>
+        </article>
+        </section>
       <script src="./task.js"></script>
 </body>
 </html>

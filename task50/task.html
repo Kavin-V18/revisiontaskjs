@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <style>
-        body{
-            background-color:paleturquoise;
-        }
-    </style>
 </head>
 <body>
-   <button onclick="UsersFunction()">display users</button>
-    <div id="userContainer"></div>
+
+         <h3>User List (API Pagination)</h3>
+
+<div id="users"></div>
+<br>
+
+<button onclick="prev()">Prev</button>
+
+<button onclick="next()">Next</button>
+       
     <script src="./task.js"></script>
 </body>
 </html>

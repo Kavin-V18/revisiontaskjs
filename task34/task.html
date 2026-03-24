@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+         body{
+            background-color: teal;
+            color: black;
+         }
+            section{
+                  margin-top: 100px;
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+            } 
+            #content{
+                background-color: white;
+                padding: 30px;
+            } 
+    </style>
+</head>
+
+<body>
+
+     <section>
+         <div id="content">
+
+<h3>Kanban Board</h3>
+
+<div style="display:flex;gap:20px;">
+
+<div ondrop="drop(event)" ondragover="allow(event)"
+
+style="width:150px;min-height:150px;border:1px solid black;padding:10px;">
+
+<b>TODO</b><br><br>
+
+<div draggable="true" ondragstart="drag(event)">Task 1</div>
+
+<div draggable="true" ondragstart="drag(event)">Task 2</div>
+
+</div>
+
+<div ondrop="drop(event)" ondragover="allow(event)"
+
+ style="width:150px;min-height:150px;border:1px solid black;padding:10px;">
+
+ <b>IN PROGRESS</b>
+
+</div>
+
+<div ondrop="drop(event)" ondragover="allow(event)"
+
+style="width:150px;min-height:150px;border:1px solid black;padding:10px;">
+
+ <b>DONE</b>
+
+</div>
+
+</div>
+</div>
+</section>
+
+<script src="./task.js"></script>
+
+
+</body>
+
+</html>

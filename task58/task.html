@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Multi Step Form</title>
+</head>
+
+<body>
+    <div class="step">
+        <h2>User Details</h2>
+        <div>
+            <label for="userdetails">Enter the name </label>
+        </div>
+        <div>
+            <input type="text" id="name">
+        </div>
+        <div>
+            <label for="userdetails">Contact No </label>
+        </div>
+        <div>
+            <input type="text" id="phone">
+        </div>
+        <button onclick="next()" id="nextbutton">Next</button>
+    </div>
+    <div class="step">
+        <h2>Email details</h2>
+        <div>
+            <label for="userdetails">Enter the Email </label>
+        </div>
+        <div>
+            <input type="email" id="email">
+        </div>
+        <div>
+            <label for="userdetails">Enter the password </label>
+        </div>
+        <div>
+            <input type="password" id="pass">
+        </div>
+            <button onclick="prev()" id="prebutton">Prev</button>
+    <button onclick="next()" id="nextbutton">Next</button>
+    </div>
+
+    <div class="step">
+        <h2>Address</h2>
+        <div>
+            <label for="userdetails">Enter the Address </label>
+        </div>
+        <div>
+            <textarea name="Address" id="Address"></textarea>
+        </div>
+        <div>
+            <label for="userdetails">City </label>
+        </div>
+        <div>
+            <input type="text" id="city">
+        </div>
+        <div>
+            <label for="userdetails">Pincode </label>
+        </div>
+        <div>
+            <input type="text" id="zipcode">
+        </div>
+        <button onclick="prev()" id="prebutton">Prev</button>
+        <button onclick="result()" id="nextbutton">Submit</button>
+    </div>
+
+    <script src="./task.js"></script>
+</body>
+
+</html>

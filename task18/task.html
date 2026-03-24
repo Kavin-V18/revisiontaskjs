@@ -4,8 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+   <style>
+         body{
+             background-color:pink;
+             color: black;
+             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          }
+          section{
+            margin-top: 200px;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+          }
+          article div{
+            margin: 5px;
+            padding: 5px;
+          }
+   </style>
+       
 </head>
-<body>
+<body>      <section>
+    <article>
+           <h2 style="color: black;">Character Counter</h2>
          <div><label for="">Enter a Sentence</label></div>
 
          <textarea name="" id="inputField"></textarea>
@@ -15,8 +35,8 @@
          <button id="countButton">Count Characters</button>
 
          <div id="resultDiv"></div>
-
-
+</article>
+</section>
      <script src="./task.js"></script>
 </body>
 </html>

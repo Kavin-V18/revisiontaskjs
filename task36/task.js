@@ -5,7 +5,7 @@ let loading = false
 async function displayImages() {
         if (loading) return
         loading = true
-        let photos = await fetch(`https://jsonplaceholder.typicode.com/photos?_limit=13&_page=${page}`).then(data => { return data.json() })
+        let photos = await fetch(`https://jsonplaceholder.typicode.com/photos?_limit=21&_page=${page}`).then(data => { return data.json() })
         let gallery = document.getElementById("gallery")
         photos.forEach(pics => {
 

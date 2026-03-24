@@ -1,19 +1,17 @@
 
-let fullname=document.getElementById("name")
-let email=document.getElementById("email")
-let message=document.getElementById("message")
+window.onload = function(){
+document.getElementById("name").value = localStorage.getItem("name") || "";
+document.getElementById("email").value = localStorage.getItem("email") || "";
+document.getElementById("msg").value = localStorage.getItem("msg") || "";
+};
+document.getElementById("name").oninput = function(){
+localStorage.setItem("name", this.value);
+};
+document.getElementById("email").oninput = function(){
+localStorage.setItem("email", this.value);
+};
+document.getElementById("msg").oninput = function(){
+localStorage.setItem("msg", this.value);
+};  
 
-
-fullname.addEventListener("input",function(){
-       
-    let name=localStorage.setItem("fullname",fullname.value)
-})
-email.addEventListener("input",function(){
-       
-    let emailid=localStorage.setItem("fullname",email.value)
-})
-message.addEventListener("input",function(){
-       
-    let messages=localStorage.setItem("fullname",message.value)
-})
 
